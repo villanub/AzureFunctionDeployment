@@ -66,7 +66,7 @@
         },
         "githubRepoURL": {
             "type": "string",
-            "defaultValue": "https://github.com/microsoft/AzureFunctionForSplunkVS.git"
+            "defaultValue": "https://github.com/villanub/ASCSplunkFunctionV2.git"
         },
         "githubRepoBranch": {
             "type": "string",
@@ -90,11 +90,11 @@
         },
         "inputHubNameSecurityLogs": {
             "type": "string",
-            "defaultValue": "input-hub-name-security-log"
+            "defaultValue": "security"
         },
         "consumerGroupNameSecurityLog": {
             "type": "string",
-            "defaultValue": "$default"
+            "defaultValue": "security"
         },
         "consumerGroupNameDiagnosticLogs": {
             "type": "string",
