@@ -38,6 +38,12 @@
         "inputHubNameLAD": {
             "value": "insights-telemetry-lad"
         },
+        "inputHubNameSecurityLogs": {
+            "value": "security"
+        },
+        "consumerGroupNameSecurityLog": {
+            "value": "security"
+        },
         "splunkToken": {
             "value": "4BC788E0-YOUR-GUID-HERE-733EBC656112"
         },
