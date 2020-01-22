@@ -88,6 +88,14 @@
             "type": "string",
             "defaultValue": "insights-logs-diagnostics"
         },
+        "inputHubNameSecurityLogs": {
+            "type": "string",
+            "defaultValue": "input-hub-name-security-log"
+        },
+        "consumerGroupNameSecurityLog": {
+            "type": "string",
+            "defaultValue": "$default"
+        },
         "consumerGroupNameDiagnosticLogs": {
             "type": "string",
             "defaultValue": "$default"
