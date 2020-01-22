@@ -310,6 +310,7 @@
                             "name": "consumer-group-lad",
                             "value": "[parameters('consumerGroupNameLAD')]"
                         },
+                        {    
                             "name": "consumer-group-security-log",
                             "value": "[parameters('consumerGroupNameSecurityLog')]"
                         },
@@ -317,6 +318,7 @@
                             "name": "input-hub-name-faults",
                             "value": "[parameters('inputHubNameFaults')]"
                         },
+                        {
                             "name": "input-hub-name-security-log",
                             "value": "[parameters('inputHubNameSecurityLogs')]"
                         },
