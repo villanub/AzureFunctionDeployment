@@ -30,19 +30,19 @@
                 "PremiumV2",
                 "Isolated"
             ],
-            "defaultValue": "Standard"
+            "defaultValue": "Free"
         },
         "appServicePlanName": {
             "type": "string",
-            "defaultValue": "S1"
+            "defaultValue": "F1"
         },
         "appServicePlanCapacity": {
             "type": "int",
-            "defaultValue": 2
+            "defaultValue": 1
         },
         "appInsightsLocation": {
             "type": "string",
-            "defaultValue": "UK South",
+            "defaultValue": "South Central US",
             "allowedValues": [
                 "Australia East",
                 "Canada Central",
