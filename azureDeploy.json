@@ -184,12 +184,8 @@
             "location": "[resourceGroup().location]",
             "kind": "StorageV2",
             "sku": {
-                "name": "Standard_LRS",
-                "tier": "Standard"
+                "name": "Standard_LRS"
             },
-            "properties": {
-                "accessTier": "Hot"
-            }
         },
         {
             "name": "[parameters('appInsightsName')]",
