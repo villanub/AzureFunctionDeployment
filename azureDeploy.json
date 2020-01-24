@@ -19,27 +19,6 @@
                 "description": "The ServicePlan option creates an App Service Plan and is billed according to that plan. The Consumption option bills according to https://azure.microsoft.com/en-gb/pricing/details/functions/."
             }
         },        
-        "appServicePlanTier": {
-            "type": "string",
-            "allowedValues": [
-                "Free",
-                "Shared",
-                "Basic",
-                "Standard",
-                "Premium",
-                "PremiumV2",
-                "Isolated"
-            ],
-            "defaultValue": "Free"
-        },
-        "appServicePlanName": {
-            "type": "string",
-            "defaultValue": "F1"
-        },
-        "appServicePlanCapacity": {
-            "type": "int",
-            "defaultValue": 1
-        },
         "appInsightsLocation": {
             "type": "string",
             "defaultValue": "South Central US",
@@ -198,18 +177,6 @@
                 "Request_Source": "rest"
             }
         },
-        {
-            "condition": "[equals(parameters('appServicePlanType'), 'ServicePlan')]",
-            "type": "Microsoft.Web/serverfarms",
-            "apiVersion": "2016-09-01",
-            "name": "[variables('ServicePlanName')]",
-            "location": "[resourceGroup().location]",
-            "sku": {
-                "tier": "[parameters('appServicePlanTier')]",
-                "name": "[parameters('appServicePlanName')]",
-                "capacity": "[parameters('appServicePlanCapacity')]"
-            }
-        },        
         {
             "condition": "[equals(parameters('appServicePlanType'), 'Consumption')]",
             "type": "Microsoft.Web/serverfarms",
