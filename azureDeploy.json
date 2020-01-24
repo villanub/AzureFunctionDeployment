@@ -10,7 +10,7 @@
         },
         "appServicePlanType" : {
             "type": "string",
-            "defaultValue": "ServicePlan",
+            "defaultValue": "Consumption",
             "allowedValues": [
                 "ServicePlan",
                 "Consumption"
@@ -170,7 +170,6 @@
         "alwaysOnAvailable": "[and(variables('alwaysOnAvail0'), variables('alwaysOnAvailc'))]",
 
         "functionAppName": "[parameters('appName')]",
-        "ServicePlanName": "[concat('sp-', parameters('appName'))]",
         "ConsumptionName": "[concat('cn-', parameters('appName'))]",
         "hostingPlanName": "[variables(concat(parameters('appServicePlanType'), 'Name'))]",
         "storageAccountName": "[concat('func', uniquestring(resourceGroup().id))]",
