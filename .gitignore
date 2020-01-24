@@ -13,6 +13,8 @@ greg.parameters.*
 *.sln.docstates
 */.vs/*.sqlite
 */.vs/slnx.sqlite
+*.sqlite
+slnx.sqlite
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
